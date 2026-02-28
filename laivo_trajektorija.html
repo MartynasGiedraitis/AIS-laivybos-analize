@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_1e011260b4ebf3d421927a6feb6c7d02 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_1e011260b4ebf3d421927a6feb6c7d02" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_1e011260b4ebf3d421927a6feb6c7d02 = L.map(
+                "map_1e011260b4ebf3d421927a6feb6c7d02",
+                {
+                    center: [53.634955, 6.181355],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 14,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_523a76c6c22db50316dc2840f60dc36c = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_523a76c6c22db50316dc2840f60dc36c.addTo(map_1e011260b4ebf3d421927a6feb6c7d02);
+        
+    
+            var poly_line_bb0630b9f45fd530120ce1f95a93c814 = L.polyline(
+                [[53.634955, 6.181355], [53.634937, 6.18128], [53.634937, 6.18128], [53.63494, 6.181323], [53.634988, 6.181338], [53.634988, 6.181338], [53.634978, 6.18142], [53.634992, 6.181463], [53.634992, 6.181463], [53.635028, 6.181458], [53.635028, 6.181458], [53.635055, 6.181543], [53.635055, 6.181543], [53.635055, 6.181543], [53.635083, 6.181608], [53.635072, 6.18164], [53.635102, 6.18177], [53.635102, 6.18177], [53.63515, 6.181883], [53.635332, 6.182095], [53.635325, 6.182058], [53.635382, 6.182163], [53.6349, 6.180205]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_1e011260b4ebf3d421927a6feb6c7d02);
+        
+    
+            var marker_b8422bb07394fdd8f4c4313e9a946894 = L.marker(
+                [53.634955, 6.181355],
+                {
+}
+            ).addTo(map_1e011260b4ebf3d421927a6feb6c7d02);
+        
+    
+            var icon_4e95c85d462730d3f513f69f8c7a8dbe = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_aea245ede89ea56d02df6e6428cd359b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6bdc5f2c7a945c37971def1c7435f345 = $(`<div id="html_6bdc5f2c7a945c37971def1c7435f345" style="width: 100.0%; height: 100.0%;">Pradžia: 17/05/2025 07:48:40</div>`)[0];
+                popup_aea245ede89ea56d02df6e6428cd359b.setContent(html_6bdc5f2c7a945c37971def1c7435f345);
+            
+        
+
+        marker_b8422bb07394fdd8f4c4313e9a946894.bindPopup(popup_aea245ede89ea56d02df6e6428cd359b)
+        ;
+
+        
+    
+    
+                marker_b8422bb07394fdd8f4c4313e9a946894.setIcon(icon_4e95c85d462730d3f513f69f8c7a8dbe);
+            
+    
+            var marker_3c2316f7e6488bba886d12ccb615ab29 = L.marker(
+                [53.6349, 6.180205],
+                {
+}
+            ).addTo(map_1e011260b4ebf3d421927a6feb6c7d02);
+        
+    
+            var icon_52f0c51cda5061de4d53af12d56c01a9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2a7a551e3ec16643bce2bb56aa11c0cd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_97623d14e0b1c375fed6987870da7d3b = $(`<div id="html_97623d14e0b1c375fed6987870da7d3b" style="width: 100.0%; height: 100.0%;">Pabaiga: 17/05/2025 15:54:38</div>`)[0];
+                popup_2a7a551e3ec16643bce2bb56aa11c0cd.setContent(html_97623d14e0b1c375fed6987870da7d3b);
+            
+        
+
+        marker_3c2316f7e6488bba886d12ccb615ab29.bindPopup(popup_2a7a551e3ec16643bce2bb56aa11c0cd)
+        ;
+
+        
+    
+    
+                marker_3c2316f7e6488bba886d12ccb615ab29.setIcon(icon_52f0c51cda5061de4d53af12d56c01a9);
+            
+</script>
+</html>
